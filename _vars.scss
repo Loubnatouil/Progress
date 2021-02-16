@@ -1,0 +1,59 @@
+// vars 
+$width:100%;
+$px:20px;
+$height:100px;
+$bar-size: 5px;
+$bar-radius: 60px;
+// Color Variables ======================================
+$green: #92dbdd;
+$gray-light: #eef1f3;
+$white:#ffff;
+$gray: #918989; 
+$blue: #191938;
+$bar-bg: #00000013;
+$Color-cercle:#38d0d3;
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body
+{
+    background-color: #f9fdff;
+    height: $width;
+}
+
+@mixin card {
+
+    width: $height*5;
+    height: $height*4;
+    margin: $px*3 auto;
+    background-color:$white;
+    border-radius: $px/2;
+    box-shadow: 1px 10px 6px 1px  #eff1f1;
+
+}
+@mixin two-cercle {
+    cursor: pointer;
+    border-radius: $height+$bar-radius;
+    width: $px+$bar-size;
+    height: $px+$bar-size;
+     background-color:$Color-cercle ;
+    box-shadow: 1px $bar-size $bar-size $bar-size $Color-cercle;
+   transform: translate(650px,$bar-size*3); 
+}
+@mixin btn {
+  background-color: #0a0a27;
+  border-radius: 60px;
+  width: 160px;
+  font-size: 13px;
+  color: #ffffff;
+  height: 38px;
+  transform: translate(700PX,-60PX);
+   
+}
